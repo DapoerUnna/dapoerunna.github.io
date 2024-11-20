@@ -165,8 +165,13 @@ nav {
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
+.nav_item {
+    margin: 20px;
+}
 .nav_link {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
