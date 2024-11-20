@@ -3,24 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shop</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><i class='bx bxs-home-smile' ></i></a>
-        </div>
-        <div class="nav-links">
-            <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="#" class="nav_logo">Dapoer Unna</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
+                </ul>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About Us</a>
+                    </li>
+                </ul>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="https://dapoerunna.id.biz.id/location" class="nav_link">Location</a>
+                    </li>
+                </ul>
+                
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="https://dapoerunna.id.biz.id/order" class="nav_link">Order</a>
+                    </li>
+                </ul>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="https://dapoerunna.id.biz.id/dashboard" class="nav_link">Dashboard</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+                <!-- <img src="#" alt="logo" class="nav_img-1">
+                <img src="#" alt="logo" class="nav_img-2"> -->
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
     </header>
-    <script src="script.js" type="module"></script>
+
+    <main class="main">
+        <section class="home section" id="home"></section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
