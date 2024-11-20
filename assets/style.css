@@ -163,7 +163,6 @@ nav {
 
 .nav_list {
     display: flex;
-    flex-direction: column;
     row-gap: 2.5rem;
     justify-content: center;
     align-items: center;
@@ -207,6 +206,19 @@ nav {
 
 .show-menu {
     right: 0;
+}
+
+.blur-header::after {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(0,0%,6%,.2);
+    backdrop-filter: blur (16px);
+    -webkit-backdrop-filter: blur(16px);
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .home {
@@ -313,4 +325,84 @@ nav {
 
 .button:hover {
     background-color: var(--first-color-alt);
+}
+
+.footer {
+    padding-block: 3rem 2rem;
+}
+
+.footer_container {
+    position: relative;
+    row-gap: 4rem;
+}
+
+.footer_logo {
+    display: inline-block;
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    margin-bottom: .5rem;
+    transition: color .4s;
+}
+
+.footer_logo:hover {
+    color: var(--first-color-alt);
+}
+
+.footer_content {
+    grid-template-columns: repeat(2, max-content);
+    gap: 4rem 2rem;
+}
+
+.footer_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.footer_list{
+    display: grid;
+    row-gap: .75rem;
+}
+
+.footer_info {
+    font-style: normal;
+}
+
+.footer_social {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer_social a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color .4s;
+}
+
+.footer_social a:hover {
+    color: var(--first-color);
+}
+
+.footer_img-1,
+.footer_img-2 {
+    position: absolute;
+}
+
+.footer_img-1 {
+    width: 60px;
+    top: 2.5rem;
+    right: 1.5rem;
+}
+
+.footer_img-2 {
+    width: 70px;
+    top: 17rem;
+    left: 9rem;
+}
+
+.footer_copy {
+    display: block;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: var(--small-font-size);
 }
