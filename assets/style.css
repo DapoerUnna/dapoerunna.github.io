@@ -148,6 +148,7 @@ nav {
 
 @media screen and (max-width: 1150px) {
     .nav_menu {
+        flex-direction: column;
         position: fixed;
         top: 0;
         right: -100%;
@@ -156,16 +157,34 @@ nav {
         -webkit-backdrop-filter:blur(16px) ;
         width: 80%;
         height: 100%;
-        padding: 6rem 3rem 0;
+        padding: 6rem 10rem 0;
         transition: right .4s;
     }
+
+    .nav_list {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .nav_item {
+        margin: 10px 0;
+    }
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .nav_list {
     display: flex;
-    row-gap: 2.5rem;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    row-gap: 2.5rem; 
 }
 
 .nav_item {
