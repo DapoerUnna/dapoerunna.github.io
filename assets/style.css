@@ -233,7 +233,7 @@ nav {
     width: 1000%;
     height: 100%;
     background-color: hsla(0,0%,6%,.2);
-    backdrop-filter: blur (16px);
+    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     top: 0;
     left: 0;
@@ -245,7 +245,7 @@ nav {
     padding-top: 6.5rem;
 }
 
-.home_contaiber {
+.home_container {
     row-gap: 2rem;
 }
 
@@ -270,7 +270,7 @@ nav {
                 hsl(0,0%,6%) 100%);
 }
 
-.hoem_data {
+.home_data {
     position: relative;
     text-align: center;
 }
@@ -282,15 +282,15 @@ nav {
 }
 
 .home_cake {
-    width: 50;
-    position: relative;
-    top: 1rem;
+    width: 50px;
+    position: absolute;
+    top: 15rem;
     left: 4rem;
 }
 
 .home_image {
-    rotate: 15deg;
-    width: 30rem;
+   max-width: 400px;
+   justify-self: center;
 }
 
 .home_footer,
@@ -346,6 +346,30 @@ nav {
     background-color: var(--first-color-alt);
 }
 
+.about_container {
+    row-gap: 4rem;
+}
+
+.about_data {
+    position: relative;
+    text-align: center;
+}
+
+.about_description {
+    margin-bottom: 3rem;
+}
+
+.about_cake {
+    width: 60px;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+}
+
+.about_img {
+    width: 320px;
+    justify-self: center;
+}
 .footer {
     padding-block: 3rem 2rem;
 }
@@ -424,4 +448,201 @@ nav {
     margin-top: 6rem;
     text-align: center;
     font-size: var(--small-font-size);
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(28, 12%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(28, 12%, 25%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(28, 12%, 35%);
+}
+
+@media screen and (max-width: 340px;){
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .home_title {
+        font-size: 2.5rem;
+    }
+
+    .home_footer {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px;){
+    .nav_menu {
+        width: 50%;
+    }
+
+    .home_container {
+        grid-template-columns: 360px;
+        justify-content: center;
+    }
+
+    .footer_content {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home {
+        padding-top: 3rem;
+    }
+
+    .home_container {
+        grid-template-columns: repeat(2, 350px);
+        align-items: center;
+    }
+
+    .home_date {
+        text-align: initial;
+    }
+
+    .home_footer {
+        grid-column: 1 / 3;
+    }
+
+    .about_container {
+        grid-template-columns: repeat(2, 350px);
+        align-items: center;
+    }
+
+    .about_data {
+        order: 1;
+    }
+
+    .about_data,
+    .about_data .section_title {
+        text-align: initial;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
+
+    .footer_img-1 {
+        top: 6rem;
+    }
+
+    .footer_img-2 {
+        top: 8rem;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 2rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 2rem);
+    }
+
+    .nav_toggle,
+    .nav_close,
+    .nav_img-1,
+    .nav_img-2 {
+        display: none;
+    }
+
+    .nav_menu {
+        width: initial;
+    }
+
+    .nav_list {
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .home_container {
+        grid-template-columns: 470px 550px;
+        column-gap: 3rem;
+    }
+
+    .home_title {
+        margin-bottom: 2rem;
+    }
+
+    .home_cake {
+        width: 80px;
+        left: 10rem;
+    }
+
+    .home_image {
+        max-width: initial;
+        width: 550px;
+    }
+
+    .home_location i {
+        font-size: 2rem;
+    }
+
+    .home_location span {
+        font-size: var(--normal-font-size);
+    }
+
+    .home_social {
+        column-gap: 1.5rem;
+    }
+
+    .about_container {
+        grid-template-columns: 450px 430px;
+    }
+
+    .about_img {
+        width: 450px;
+    }
+
+    .about_cake {
+        width: 90px;
+        bottom: -3rem;
+        right: 4rem;
+    }
+
+    .footer {
+        padding-block: 5rem 3rem;
+    }
+
+    .footer_logo,
+    .footer_title {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer_content {
+        column-gap: 4.5rem;
+    }
+
+    .footer_social {
+        column-gap: 1.5rem;
+    }
+
+    .footer_img-1 {
+        width: 90px;
+        right: initial;
+        left: 15rem;
+    }
+
+    .footer_img-2 {
+        width: 90px;
+        left: initial;
+        right: 7rem;
+    }
+
+    .footer_copy {
+        margin-top: 8rem;
+    }
 }

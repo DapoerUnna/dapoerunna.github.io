@@ -29,3 +29,19 @@ const blurHeader = () => {
 };
 
 window.addEventListener('scroll', blurHeader);
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    opacity: 1,
+    scale: 1.1,
+    duration: 2500,
+    delay: 300,
+    // reset: true
+});
+
+sr.reveal('.home_data, .about_img, .about_data'); 
+
+sr.reveal('.home_image', { rotate: { z: -15 } });
+sr.reveal('.home_cake', { rotate: { z: 15 } });
+sr.reveal('.home_footer', { scale: 1, origin: 'bottom' });
