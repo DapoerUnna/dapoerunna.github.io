@@ -33,15 +33,17 @@ window.addEventListener('scroll', blurHeader);
 const sr = ScrollReveal({
     origin: 'top',
     distance: '40px',
-    opacity: 1,
-    scale: 1.1,
+    // opacity: 1,
+    // scale: 1.1,
     duration: 2500,
     delay: 300,
-    // reset: true
+    reset: true // Uncomment this line if you want the reveal effect to reset
 });
 
-sr.reveal('.home_data, .about_img, .about_data'); 
+sr.reveal('.home_data, .about_img, .about_data');
 
-sr.reveal('.home_image', { rotate: { z: -15 } });
-sr.reveal('.home_cake', { rotate: { z: 15 } });
-sr.reveal('.home_footer', { scale: 1, origin: 'bottom' });
+
+sr.reveal('.home_data', { delay: 200 });//{ rotate: { z: -15 } });
+sr.reveal('.home_image', { delay: 200 });//{ rotate: { z: -15 } });
+sr.reveal('.home_cake', { delay: 200 });//{ rotate: { z: 15 } });
+sr.reveal('.home_footer', { delay: 200 });//{ scale: 1, origin: 'bottom' });
