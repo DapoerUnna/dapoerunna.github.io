@@ -40,7 +40,7 @@ const sr = ScrollReveal({
     reset: true // Uncomment this line if you want the reveal effect to reset
 });
 
-sr.reveal('.home_data, .about_img, .about_data');
+sr.reveal('.home_data, .about_img, .about_data, .about_cake');
 
 
 sr.reveal('.home_data', { delay: 200 });//{ rotate: { z: -15 } });
