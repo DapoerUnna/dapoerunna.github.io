@@ -1,3 +1,10 @@
+window.onload = function() {
+    const loading = document.getElementById('loading');
+    setTimeout(() => {
+        loading.style.display = 'none'; // Sembunyikan loading page setelah beberapa detik
+    }, 2000); // Tampilkan loading selama 2 detik
+};
+
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close');
